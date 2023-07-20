@@ -1,7 +1,7 @@
-## Save the Bees!!
+# Save the Bees!!
 ![Honeybees](https://cdn.mos.cms.futurecdn.net/HixjyeXYJCrSDVGkZTmprP-1024-80.jpg.webp)
 
-In this project I will be comparing census data on honeybees to that of US citizens to determine a ratio! (Note: This project was just for fun. It does not use up-to-date data and should not be used for research purposes)
+<font size="1"> In this project I will be comparing census data on honeybees to that of US citizens to determine a ratio! (Note: This project was just for fun. It does not use up-to-date data and should not be used for research purposes)
 Data used for the comparison is from 2010-2012.
 In order to run this project please do the following:
 
