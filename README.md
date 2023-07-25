@@ -16,9 +16,45 @@ Requirements satisfied:
 3. CSV files merged.
 4. One Pandas pivot table.
 5. Two visualizations.
-6. Code is annotated throughout.
-7. Markdown language utilized.
+6. One Tableau Workbook.
+7. Code is annotated throughout.
+8. Markdown language utilized.
+9. Data dictionary included.
+
 ### Data Sources:
 https://data.world/finley/bee-colony-statistical-data-from-1987-2017/workspace/file?filename=Bee+Colony+Census+Data+by+County.csv
 
 https://www.kaggle.com/datasets/peretzcohen/2019-census-us-population-data-by-state
+
+### Tableau Workbook: 
+    https://public.tableau.com/authoring/HoneybeeProject/Sheet1#1
+
+# Data Dictionary
+
+## "bee_data" DataFrame:
+Year (integer): The year of the census data.
+State (string): The name of the state where the data was collected.
+Value (float): The estimated population of honeybees in the state for the given year.
+## "us_data" DataFrame:
+NAME (string): The name of the state or territory in the United States.
+POPESTIMATE2010 (integer): The estimated population of the state in the year 2010.
+POPESTIMATE2011 (integer): The estimated population of the state in the year 2011.
+POPESTIMATE2012 (integer): The estimated population of the state in the year 2012.
+## "clean_bee_data" DataFrame:
+STATE (string): The name of the state.
+BEEPOP (float): The estimated population of honeybees in the state, calculated by multiplying the 'Value' by the 'avg_colony_pop' (average colony population) constant.
+## "clean_us_data" DataFrame:
+NAME (string): The name of the state or territory in the United States (uppercase).
+USPOP (float): The estimated population of the state in the years 2010 to 2012, calculated by taking the mean of 'POPESTIMATE2010', 'POPESTIMATE2011', and 'POPESTIMATE2012'.
+## "combined_data" DataFrame:
+STATE (string): The name of the state.
+BEEPOP (float): The estimated population of honeybees in the state, given in millions.
+USPOP (float): The estimated population of the state in the years 2010 to 2012, given in millions.
+## "pivot_table" DataFrame:
+STATE (string): The name of the state.
+BEEPOP (string): The estimated population of honeybees in the state, formatted as 'X.XM' (X million).
+USPOP (string): The estimated population of the state in the years 2010 to 2012, formatted as 'X.XM' (X million).
+## "totals_data" DataFrame:
+'' (string): An empty string representing the total population data for the entire United States.
+BEETOTAL (float): The total estimated population of honeybees in the United States, given in millions.
+USTOTAL (float): The total estimated population of the United States in the years 2010 to 2012, given in millions.
