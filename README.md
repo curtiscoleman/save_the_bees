@@ -32,29 +32,29 @@ https://www.kaggle.com/datasets/peretzcohen/2019-census-us-population-data-by-st
 # Data Dictionary
 
 ## "bee_data" DataFrame:
-Year (integer): The year of the census data.
-State (string): The name of the state where the data was collected.
-Value (float): The estimated population of honeybees in the state for the given year.
+ Year (integer): The year of the census data. <br> 
+ State (string): The name of the state where the data was collected.<br>
+ Value (float): The estimated population of honeybees in the state for the given year.<br>
 ## "us_data" DataFrame:
-NAME (string): The name of the state or territory in the United States.
-POPESTIMATE2010 (integer): The estimated population of the state in the year 2010.
-POPESTIMATE2011 (integer): The estimated population of the state in the year 2011.
-POPESTIMATE2012 (integer): The estimated population of the state in the year 2012.
+ NAME (string): The name of the state or territory in the United States.<br>
+ POPESTIMATE2010 (integer): The estimated population of the state in the year 2010.<br>
+ POPESTIMATE2011 (integer): The estimated population of the state in the year 2011.<br>
+ POPESTIMATE2012 (integer): The estimated population of the state in the year 2012.<br>
 ## "clean_bee_data" DataFrame:
-STATE (string): The name of the state.
-BEEPOP (float): The estimated population of honeybees in the state, calculated by multiplying the 'Value' by the 'avg_colony_pop' (average colony population) constant.
+ STATE (string): The name of the state.<br>
+ BEEPOP (float): The estimated population of honeybees in the state, calculated by multiplying the 'Value' by the 'avg_colony_pop' (average colony population) constant.<br>
 ## "clean_us_data" DataFrame:
-NAME (string): The name of the state or territory in the United States (uppercase).
-USPOP (float): The estimated population of the state in the years 2010 to 2012, calculated by taking the mean of 'POPESTIMATE2010', 'POPESTIMATE2011', and 'POPESTIMATE2012'.
+ NAME (string): The name of the state or territory in the United States (uppercase).<br>
+ USPOP (float): The estimated population of the state in the years 2010 to 2012, calculated by taking the mean of 'POPESTIMATE2010', 'POPESTIMATE2011', and 'POPESTIMATE2012'.<br>
 ## "combined_data" DataFrame:
-STATE (string): The name of the state.
-BEEPOP (float): The estimated population of honeybees in the state, given in millions.
-USPOP (float): The estimated population of the state in the years 2010 to 2012, given in millions.
+ STATE (string): The name of the state.<br>
+ BEEPOP (float): The estimated population of honeybees in the state, given in millions.<br>
+ USPOP (float): The estimated population of the state in the years 2010 to 2012, given in millions.<br>
 ## "pivot_table" DataFrame:
-STATE (string): The name of the state.
-BEEPOP (string): The estimated population of honeybees in the state, formatted as 'X.XM' (X million).
-USPOP (string): The estimated population of the state in the years 2010 to 2012, formatted as 'X.XM' (X million).
+ STATE (string): The name of the state.<br>
+ BEEPOP (string): The estimated population of honeybees in the state, formatted as 'X.XM' (X million).<br>
+ USPOP (string): The estimated population of the state in the years 2010 to 2012, formatted as 'X.XM' (X million).<br>
 ## "totals_data" DataFrame:
-'' (string): An empty string representing the total population data for the entire United States.
-BEETOTAL (float): The total estimated population of honeybees in the United States, given in millions.
-USTOTAL (float): The total estimated population of the United States in the years 2010 to 2012, given in millions.
+ '' (string): An empty string representing the total population data for the entire United States.<br>
+ BEETOTAL (float): The total estimated population of honeybees in the United States, given in millions.<br>
+ USTOTAL (float): The total estimated population of the United States in the years 2010 to 2012, given in millions.<br>
